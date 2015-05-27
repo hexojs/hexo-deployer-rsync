@@ -22,6 +22,7 @@ deploy:
   root: <root>
   port: [port] # Default is 22
   delete: [true|false] # Default is true
+  args: <rsync args>
   verbose: [true|false] # Default is true
   ignore_errors: [true|false] # Default is false
 ```
@@ -30,7 +31,8 @@ deploy:
 - **user**: Username  
 - **root**: Root directory of remote host   
 - **port**: Port
-- **delete**: Delete old files on remote host 
+- **delete**: Delete old files on remote host
+- **args**: Rsync arguments
 - **verbose**: Display verbose messages
 - **ignore_errors**: Ignore errors
 
