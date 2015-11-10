@@ -36,6 +36,7 @@
   },
   "dependencies": {
     "chalk": "^1.0.0",
+    "debuglog": "^1.0.1",
     "hexo-util": "^0.1.0"
   }
 }
