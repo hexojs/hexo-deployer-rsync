@@ -30,7 +30,7 @@
     "istanbul": "^0.4.3",
     "jscs": "^3.0.4",
     "jscs-preset-hexo": "^1.0.1",
-    "mocha": "^5.2.0"
+    "mocha": "^6.0.1"
   },
   "dependencies": {
     "chalk": "^2.4.1",
