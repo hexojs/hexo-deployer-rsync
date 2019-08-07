@@ -1,6 +1,7 @@
 # hexo-deployer-rsync
 
-[![NPM version](https://badge.fury.io/js/hexo-deployer-rsync.svg)](http://badge.fury.io/js/hexo-deployer-rsync)
+[![Build Status](https://travis-ci.org/hexojs/hexo-deployer-rsync.svg?branch=master)](https://travis-ci.org/hexojs/hexo-deployer-rsync)
+[![NPM version](https://badge.fury.io/js/hexo-deployer-rsync.svg)](https://www.npmjs.com/package/hexo-deployer-rsync)
 
 Rsync deployer plugin for [Hexo].
 
