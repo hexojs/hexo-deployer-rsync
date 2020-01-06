@@ -30,7 +30,7 @@
     "chai-as-promised": "^7.1.1",
     "eslint": "^6.0.1",
     "eslint-config-hexo": "^4.1.0",
-    "mocha": "^6.0.2",
+    "mocha": "^7.0.0",
     "nyc": "^15.0.0"
   },
   "dependencies": {
