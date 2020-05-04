@@ -35,7 +35,7 @@
   },
   "dependencies": {
     "chalk": "^2.4.1",
-    "hexo-util": "^1.0.0"
+    "hexo-util": "^2.1.0"
   },
   "engines": {
     "node": ">= 8.6.0"
