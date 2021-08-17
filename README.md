@@ -24,6 +24,7 @@ deploy:
   port: [port] # Default is 22
   delete: [true|false] # Default is true
   args: <rsync args>
+  rsh: <remote shell>
   verbose: [true|false] # Default is true
   ignore_errors: [true|false] # Default is false
 ```
@@ -34,6 +35,7 @@ deploy:
 - **port**: Port
 - **delete**: Delete old files on remote host
 - **args**: Rsync arguments
+- **rsh**: Specify the remote shell to use
 - **verbose**: Display verbose messages
 - **ignore_errors**: Ignore errors
 
