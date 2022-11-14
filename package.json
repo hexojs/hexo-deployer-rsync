@@ -35,7 +35,7 @@
   },
   "dependencies": {
     "picocolors": "^1.0.0",
-    "hexo-util": "^2.1.0"
+    "hexo-util": "^3.0.0"
   },
   "engines": {
     "node": ">= 8.6.0"
