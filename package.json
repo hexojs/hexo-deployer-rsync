@@ -30,7 +30,7 @@
     "mocha": "^10.2.0"
   },
   "dependencies": {
-    "hexo-util": "^2.1.0",
+    "hexo-util": "^3.0.1",
     "picocolors": "^1.0.0"
   },
   "engines": {
