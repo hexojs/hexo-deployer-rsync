@@ -27,6 +27,7 @@ deploy:
   rsh: <remote shell>
   verbose: [true|false] # Default is true
   ignore_errors: [true|false] # Default is false
+  create_before_update: [true|false] # Default is false
 ```
 
 - **host**: Address of remote host  
@@ -38,6 +39,7 @@ deploy:
 - **rsh**: Specify the remote shell to use
 - **verbose**: Display verbose messages
 - **ignore_errors**: Ignore errors
+- **create_before_update**: First create non-existing files, then update existing files
 
 ## License
 
