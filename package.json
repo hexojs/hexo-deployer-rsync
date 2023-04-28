@@ -13,14 +13,14 @@
     "index.js"
   ],
   "repository": "hexojs/hexo-deployer-rsync",
-  "homepage": "http://hexo.io/",
+  "homepage": "https://hexo.io/",
   "keywords": [
     "hexo",
     "rsync",
     "deploy",
     "deployer"
   ],
-  "author": "Tommy Chen <tommy351@gmail.com> (http://zespia.tw)",
+  "author": "Tommy Chen <tommy351@gmail.com> (https://zespia.tw)",
   "license": "MIT",
   "devDependencies": {
     "c8": "^7.12.0",

@@ -49,4 +49,4 @@ deploy:
 
 MIT
 
-[Hexo]: http://hexo.io/
+[Hexo]: https://hexo.io/
