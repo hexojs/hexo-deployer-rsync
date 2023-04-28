@@ -23,9 +23,9 @@
   "author": "Tommy Chen <tommy351@gmail.com> (http://zespia.tw)",
   "license": "MIT",
   "devDependencies": {
-    "c8": "^7.12.0",
-    "chai": "^4.2.0",
-    "eslint": "^8.1.0",
+    "c8": "^7.13.0",
+    "chai": "^4.3.7",
+    "eslint": "^8.39.0",
     "eslint-config-hexo": "^5.0.0",
     "mocha": "^10.2.0"
   },
