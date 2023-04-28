@@ -23,20 +23,24 @@ deploy:
   root: <root>
   port: [port] # Default is 22
   delete: [true|false] # Default is true
+  progress: [true|false] # Default is true
   args: <rsync args>
   rsh: <remote shell>
+  key: <key>
   verbose: [true|false] # Default is true
   ignore_errors: [true|false] # Default is false
   create_before_update: [true|false] # Default is false
 ```
 
-- **host**: Address of remote host  
-- **user**: Username  
-- **root**: Root directory of remote host   
+- **host**: Address of remote host
+- **user**: Username
+- **root**: Root directory of remote host
 - **port**: Port
 - **delete**: Delete old files on remote host
+- **progress**: Show rsync progress
 - **args**: Rsync arguments
 - **rsh**: Specify the remote shell to use
+- **key**: Custom SSH private key
 - **verbose**: Display verbose messages
 - **ignore_errors**: Ignore errors
 - **create_before_update**: First create non-existing files, then update existing files
