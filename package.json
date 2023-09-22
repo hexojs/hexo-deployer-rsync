@@ -1,6 +1,6 @@
 {
   "name": "hexo-deployer-rsync",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Rsync deployer plugin of Hexo.",
   "main": "index",
   "scripts": {
