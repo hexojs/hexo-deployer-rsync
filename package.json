@@ -13,17 +13,17 @@
     "index.js"
   ],
   "repository": "hexojs/hexo-deployer-rsync",
-  "homepage": "http://hexo.io/",
+  "homepage": "https://hexo.io/",
   "keywords": [
     "hexo",
     "rsync",
     "deploy",
     "deployer"
   ],
-  "author": "Tommy Chen <tommy351@gmail.com> (http://zespia.tw)",
+  "author": "Tommy Chen <tommy351@gmail.com> (https://zespia.tw)",
   "license": "MIT",
   "devDependencies": {
-    "c8": "^7.13.0",
+    "c8": "^8.0.1",
     "chai": "^4.3.7",
     "eslint": "^8.39.0",
     "eslint-config-hexo": "^5.0.0",
@@ -34,6 +34,6 @@
     "picocolors": "^1.0.0"
   },
   "engines": {
-    "node": ">= 8.6.0"
+    "node": ">= 14"
   }
 }
