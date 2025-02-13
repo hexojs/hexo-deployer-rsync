@@ -1,0 +1,6 @@
+{
+  "extends": "hexo/test",
+    "rules": {
+        "no-unused-vars": "warn"
+    }
+}
