@@ -6,7 +6,7 @@
   "scripts": {
     "eslint": "eslint .",
     "test": "mocha test/",
-    "test-cov": "c8 npm run test"
+    "test-cov": "c8 -r lcovonly npm run test"
   },
   "files": [
     "lib/",
