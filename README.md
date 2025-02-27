@@ -39,7 +39,7 @@ deploy:
 - **port**: Port
 - **delete**: Delete old files on remote host
 - **progress**: Show rsync progress
-- **args**: Rsync arguments
+- **args**: Rsync arguments (support space-separated strings)
 - **rsh**: Specify the remote shell to use
 - **key**: Custom SSH private key
 - **verbose**: Display verbose messages
