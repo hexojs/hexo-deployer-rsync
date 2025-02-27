@@ -2,6 +2,7 @@
 
 [![Build Status](https://github.com/hexojs/hexo-deployer-rsync/workflows/Tester/badge.svg)](https://github.com/hexojs/hexo-deployer-rsync/actions?query=workflow%3ATester)
 [![NPM version](https://badge.fury.io/js/hexo-deployer-rsync.svg)](https://www.npmjs.com/package/hexo-deployer-rsync)
+[![Coverage Status](https://coveralls.io/repos/github/hexojs/hexo-deployer-rsync/badge.svg)](https://coveralls.io/github/hexojs/hexo-deployer-rsync)
 
 Rsync deployer plugin for [Hexo].
 
