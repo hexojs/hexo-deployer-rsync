@@ -25,6 +25,7 @@ deploy:
   port: [port] # Default is 22
   delete: [true|false] # Default is true
   progress: [true|false] # Default is true
+  dotenv: [true|false] # Default is false
   args: <rsync args>
   rsh: <remote shell>
   key: <key>
@@ -45,6 +46,16 @@ deploy:
 - **verbose**: Display verbose messages
 - **ignore_errors**: Ignore errors
 - **create_before_update**: First create non-existing files, then update existing files
+
+# Env based options
+
+When `deploy.dotenv` config option is set to TRUE, some options can be ommitted and they will be loaded from following ENV variables instead:
+- `HEXO_RSYNC_HOST` -> maps to `deploy.host`
+- `HEXO_RSYNC_PORT` -> maps to `deploy.port`
+- `HEXO_RSYNC_USER` -> maps to `deploy.user`
+- `HEXO_RSYNC_ROOT` -> maps to `deploy.root`
+
+This can be useful in a situation when you do not want to store your SSH details in the repository, but load them from your deployment environment. 
 
 ## License
 
