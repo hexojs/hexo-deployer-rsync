@@ -29,7 +29,7 @@
     "mocha": "^11.1.0",
     "nyc": "^17.1.0",
     "rewire": "^7.0.0",
-    "sinon": "^19.0.2"
+    "sinon": "^21.0.0"
   },
   "dependencies": {
     "hexo-util": "^3.0.1",
