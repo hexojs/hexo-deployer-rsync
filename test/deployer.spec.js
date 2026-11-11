@@ -1,5 +1,6 @@
 'use strict';
 
+const { existsSync } = require('node:fs');
 const { writeFile, mkdir, rm } = require('node:fs/promises');
 const pathFn = require('node:path');
 const { expect } = require('chai');
@@ -153,6 +154,44 @@ describe('deployer', () => {
 
     it('check sinon work properly', () => {
       expect(fakeHexoSpawn.callCount).to.be.equal(0);
+    });
+
+    it('should pass SSH_ASKPASS env to spawn when passphrase is provided', () => {
+      args = { ...args, passphrase: 'secret' };
+
+      return deployer.call(hexo, args).finally(() => {
+        const spawnOptions = fakeHexoSpawn.args[0][2];
+
+        expect(fakeHexoSpawn.callCount).to.be.equal(1);
+        expect(spawnOptions.env.SSH_ASKPASS_REQUIRE).to.equal('force');
+        expect(spawnOptions.env.SSH_ASKPASS).to.be.a('string').and.not.empty;
+        expect(spawnOptions.env.DISPLAY).to.exist;
+        expect(fakeHexoSpawn.args[0][1]).to.not.include('secret');
+      });
+    });
+
+    it('should create and clean up askpass script', () => {
+      let scriptPath, existedDuringDeploy;
+
+      fakeHexoSpawn = sinon.fake((command, params, options) => {
+        if (!scriptPath) scriptPath = options.env.SSH_ASKPASS;
+        existedDuringDeploy = existsSync(scriptPath);
+        return Promise.resolve();
+      });
+      deployer.__set__('spawn', fakeHexoSpawn);
+
+      args = { ...args, passphrase: 'secret' };
+
+      return deployer.call(hexo, args).finally(() => {
+        expect(existedDuringDeploy).to.be.true;
+        expect(existsSync(scriptPath)).to.be.false;
+      });
+    });
+
+    it('should not set env when passphrase is missing', () => {
+      return deployer.call(hexo, args).finally(() => {
+        expect(fakeHexoSpawn.args[0][2]).to.not.have.property('env');
+      });
     });
   });
 });
